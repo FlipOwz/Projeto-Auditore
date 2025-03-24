@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="../assets/img/Logo_LOF.png">
+    <title>League of Friends</title>
+</head>
+
+<body class="bg-[#00000A] text-white min-h-screen w-full overflow-x-hidden">
+
+    <header id="menu" class="bg-[#0A2A47] py-3 border-b-4 border-[#C2AE57]">
+        <nav class="container mx-auto flex flex-wrap items-center px-6 justify-between">
+            <a href="../pages/campeoes.html" class="font-league text-white px-4 py-2 border-2 border-[#C2AE57] rounded-full text-lg hover:bg-[#a8934b] transition-colors hover:text-black font-bold hidden md:inline-block">Campeões</a>
+            <a href="../pages/contos.html" class="font-league text-white px-4 py-2 border-2 border-[#C2AE57] rounded-full text-lg hover:bg-[#a8934b] transition-colors hover:text-black font-bold hidden md:inline-block">Contos</a>
+            <a href="../pages/index.html">
+                <img src="../assets/img/Logo_LOF.png" alt="Logo" class="h-14 cursor-pointer">
+            </a>
+            <a href="../pages/universos.html" class="font-league text-white px-4 py-2 border-2 border-[#C2AE57] rounded-full text-lg hover:bg-[#a8934b] transition-colors hover:text-black font-bold hidden md:inline-block">Universos</a>
+            <a href="../pages/mais.html" class="font-league text-white px-4 py-2 border-2 border-[#C2AE57] rounded-full text-lg hover:bg-[#a8934b] transition-colors hover:text-black font-bold hidden md:inline-block">Mais</a>
+            <button id="menu-toggle" class="md:hidden text-white text-3xl cursor-pointer">☰</button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center gap-4 py-4">
+            <a href="../pages/campeoes.html" class="font-beaufort text-white px-4 py-2 border-2 border-[#C2AE57] rounded-full text-sm hover:bg-[#a8934b] transition-colors hover:text-black font-bold">Campeões</a>
+            <a href="../pages/contos.html" class="font-beaufort text-white px-4 py-2 border-2 border-[#C2AE57] rounded-full text-sm hover:bg-[#a8934b] transition-colors hover:text-black font-bold">Contos</a>
+            <a href="../pages/universos.html" class="font-beaufort text-white px-4 py-2 border-2 border-[#C2AE57] rounded-full text-sm hover:bg-[#a8934b] transition-colors hover:text-black font-bold">Universos</a>
+            <a href="../pages/mais.html" class="font-beaufort text-white px-4 py-2 border-2 border-[#C2AE57] rounded-full text-sm hover:bg-[#a8934b] transition-colors hover:text-black font-bold">Mais</a>
+        </div>
+    </header>
+
+    <main class="text-center px-4 md:px-8">
+
+      <!-- Introdução -->
+      <section class="mt-10 md:mt-20 py-6 w-full">
+          <h1 class="font-league text-4xl md:text-6xl">Seja bem-vindo ao</h1>
+          <img src="../assets/img/Logo_principal.png" alt="League of Friends" class="mx-auto my-4 md:my-5 w-48 md:w-96">
+          <p class="font-league max-w-xl md:max-w-2xl mx-auto text-lg md:text-lg leading-relaxed">
+              Em nome da Freestyle Experiences, queremos agradecer por entrar nesse novo projeto feito por nós, que tem como inspiração o jogo League of Legends, e a inclusão de nós dentro do universo. <br> Conheçam os campeões feitos do zero, suas histórias e até skins para dar novos estilos para todos.
+          </p>
+      </section>
+
+      <!-- Banner Destaque -->
+      <section class="bg-[#045F53] border-4 border-[#C2AE57] mt-10 md:mt-20 py-6 w-full">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
+            <h1 class="font-league text-2xl md:text-4xl font-bold text-white mb-6 text-center">Em destaque:</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 mt-6"> 
+
+                <!-- Campeão Destaque -->
+                <div class="relative bg-cover bg-center bg-no-repeat w-full max-w-[400px] h-[300px] flex flex-col items-center justify-end mx-auto" 
+                    style="background-image: url('../assets/img/Ahri.png');">
+                    <div class="absolute w-full h-2/3 bg-gradient-to-t from-[#00000A]/70 via-[#00000A]/40 to-transparent transition-all duration-700 ease-in-out hover:h-full hover:from-[#00000A]/90 hover:via-[#00000A]/60 hover:to-transparent"></div>
+                    <p class="font-league absolute bottom-12 text-[#C2AE57] text-lg md:text-2xl font-bold text-center">Campeão: <br> Ahri</p>
+                </div>
+
+                <!-- Skin Destaque -->
+                <div class="relative bg-cover bg-center bg-no-repeat w-full max-w-[400px] h-[300px] flex flex-col items-center justify-end mx-auto" 
+                    style="background-image: url('../assets/img/Zed.png');">
+                    <div class="absolute w-full h-2/3 bg-gradient-to-t from-[#00000A]/70 via-[#00000A]/40 to-transparent transition-all duration-700 ease-in-out hover:h-full hover:from-[#00000A]/90 hover:via-[#00000A]/60 hover:to-transparent"></div>
+                    <p class="font-league absolute bottom-12 text-[#C2AE57] text-lg md:text-2xl font-bold text-center">Skin Lendária: <br> Zed Galante</p>
+                </div>
+
+                <!-- Conto Destaque -->
+                <div class="bg-[#00000A] bg-opacity-40 p-4 w-full max-w-[400px] h-[300px] flex flex-col items-center justify-center mx-auto">
+                    <img src="../assets/img/Icon Livro.png" alt="Guardiãs Estelares" class="w-16 h-16">
+                    <p class="font-league mt-2 text-[#C2AE57] text-2xl font-bold text-center">Conto: <br> Guardiãs Estelares</p>
+                </div>
+            </div>
+        </div>
+      </section>
+ 
+
+      <!-- Banner Novidades -->
+      <section class="mt-10 md:mt-20 py-6 w-full">
+        <h1 class="font-league text-4xl md:text-6xl underline text-center">NOVIDADES:</h1>
+
+        <!-- Novo Universo -->
+        <div class="relative bg-cover bg-center bg-no-repeat mt-10 w-full max-w-[1400px] h-60 md:h-96 flex flex-col items-center justify-end mx-auto rounded-xl shadow-lg overflow-hidden" style="background-image: url('../assets/img/Lee-Sin.png');">
+            <div class="absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-[#C2AE57]/70 to-transparent transition-all duration-700 hover:h-full"></div>
+            <p class="font-league absolute bottom-10 text-black text-3xl md:text-5xl font-bold">Novo Universo: <br> Escamas Celestiais</p>
+        </div>
+
+        <!-- Grid de skins -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 mt-10 mx-auto max-w-[1400px] px-4 md:px-0">
+
+            <!-- Skin Lendária -->
+            <div class="relative bg-cover bg-center bg-no-repeat rounded-lg w-full max-w-[400px] h-[300px] flex flex-col items-center justify-end shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 mx-auto" 
+                style="background-image: url('../assets/img/Zed.png');">
+                <img src="../assets/img/Zed.png" class="invisible w-full" alt="Lee Sin">
+                <div class="absolute w-full h-2/3 bg-gradient-to-t from-[#C2AE57]/70 via-[#C2AE57]/40 to-transparent transition-all duration-700 ease-in-out hover:h-full hover:from-[#C2AE57]/90 hover:via-[#C2AE57]/60 hover:to-transparent"></div>
+                <p class="font-league absolute bottom-10 text-black text-3xl font-bold text-center">Skin Lendária: <br> Lee Sin</p>
+            </div>
+
+            <!-- Skin Prestígio -->
+            <div class="relative bg-cover bg-center bg-no-repeat rounded-lg w-full max-w-[400px] h-[300px] flex flex-col items-center justify-end shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 mx-auto" 
+                style="background-image: url('../assets/img/Zed.png');">
+                <img src="../assets/img/Zed.png" class="invisible w-full" alt="Ezreal">
+                <div class="absolute w-full h-2/3 bg-gradient-to-t from-[#C2AE57]/70 via-[#C2AE57]/40 to-transparent transition-all duration-700 ease-in-out hover:h-full hover:from-[#C2AE57]/90 hover:via-[#C2AE57]/60 hover:to-transparent"></div>
+                <p class="font-league absolute bottom-10 text-black text-3xl font-bold text-center">Skin Prestígio: <br> Ezreal</p>
+            </div>
+
+            <!-- Outras skins -->
+            <div class="relative bg-cover bg-center bg-no-repeat rounded-lg w-full max-w-[400px] h-[300px] flex flex-col items-center justify-end shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 mx-auto" 
+                style="background-image: url('../assets/img/Zed.png');">
+                <img src="../assets/img/Zed.png" class="invisible w-full" alt="Diana">
+                <div class="absolute w-full h-2/3 bg-gradient-to-t from-[#C2AE57]/70 via-[#C2AE57]/40 to-transparent transition-all duration-700 ease-in-out hover:h-full hover:from-[#C2AE57]/90 hover:via-[#C2AE57]/60 hover:to-transparent"></div>
+                <p class="font-league absolute bottom-10 text-black text-2xl font-bold text-center">Outras skins: <br> Diana, Kai'Sa, Janna, Smolder, Yi</p>
+            </div>
+
+        </div>
+
+      </section>
+
+      <!-- Seção Final -->
+      <section class="text-center mt-16 mb-20 px-4">
+            <h2 class="font-league text-2xl md:text-3xl font-bold mb-4">MAIS CONTEÚDOS EM BREVE...</h2>
+            <p class="font-league text-lg md:text-lg mb-6">Conheça todos os nossos campeões, histórias e skins através do menu do topo.</p>
+            <a href="#menu" class="font-league bg-[#C2AE57] text-black px-6 py-3 rounded-lg font-bold text-lg hover:bg-[#a8934b] transition-colors">
+                Clique para ir ao topo
+            </a>
+      </section>
+     </main>
+
+    <footer class="bg-[#0A2A47] py-6 text-center">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center px-6">
+            <img src="../assets/img/Logo_principal.png" alt="League of Friends" class="h-16 md:h-20 mb-4 md:mb-0">
+            <p class="font-league text-lg font-bold text-gray-300 text-center md:text-left">
+                2025 Freestyle Experiences League of Friends.<br>
+                Licence to Freestyle Experiences
+            </p>
+            <img src="../assets/img/Mini_Logo_Freestyle_Experiences_Official.png" alt="Freestyle Experiences" class="h-16 md:h-20">
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+    
+</body>
+
+</html>
