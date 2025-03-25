@@ -1,4 +1,4 @@
-/*! tailwindcss v4.0.15 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.0.16 | MIT License | https://tailwindcss.com */
 @font-face {
   font-family: LeagueSpartan;
   src: url("../src/assets/fonts/LeagueSpartan-Regular.ttf");
@@ -246,6 +246,12 @@
   .sticky {
     position: sticky;
   }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .top-1\/2 {
+    top: calc(1/2 * 100%);
+  }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
@@ -258,11 +264,20 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .left-1\/2 {
+    left: calc(1/2 * 100%);
+  }
   .isolate {
     isolation: isolate;
   }
   .isolation-auto {
     isolation: auto;
+  }
+  .z-\[1000\] {
+    z-index: 1000;
+  }
+  .z-\[1001\] {
+    z-index: 1001;
   }
   .z-auto {
     z-index: auto;
@@ -477,17 +492,11 @@
   .field-sizing-fixed {
     field-sizing: fixed;
   }
-  .aspect-\[4\/3\] {
-    aspect-ratio: 4/3;
-  }
   .aspect-auto {
     aspect-ratio: auto;
   }
   .aspect-square {
     aspect-ratio: 1 / 1;
-  }
-  .h-2 {
-    height: calc(var(--spacing) * 2);
   }
   .h-2\/3 {
     height: calc(2/3 * 100%);
@@ -501,20 +510,8 @@
   .h-60 {
     height: calc(var(--spacing) * 60);
   }
-  .h-\[200p\] {
-    height: 200p;
-  }
-  .h-\[200px\] {
-    height: 200px;
-  }
   .h-\[300px\] {
     height: 300px;
-  }
-  .h-\[400px\] {
-    height: 400px;
-  }
-  .h-\[500px\] {
-    height: 500px;
   }
   .h-auto {
     height: auto;
@@ -531,14 +528,8 @@
   .max-h-screen {
     max-height: 100vh;
   }
-  .min-h-\[300px\] {
-    min-height: 300px;
-  }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -548,6 +539,9 @@
   }
   .w-48 {
     width: calc(var(--spacing) * 48);
+  }
+  .w-\[101\%\] {
+    width: 101%;
   }
   .w-full {
     width: 100%;
@@ -656,6 +650,14 @@
   .translate-full {
     --tw-translate-x: 100%;
     --tw-translate-y: 100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-x-1\/2 {
+    --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .translate-3d {
@@ -1226,9 +1228,6 @@
   }
   .bg-black {
     background-color: var(--color-black);
-  }
-  .bg-black\/50 {
-    background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
@@ -1906,6 +1905,10 @@
     --tw-duration: 700ms;
     transition-duration: 700ms;
   }
+  .duration-2000 {
+    --tw-duration: 2000ms;
+    transition-duration: 2000ms;
+  }
   .ease-in {
     --tw-ease: var(--ease-in);
     transition-timing-function: var(--ease-in);
@@ -2135,6 +2138,11 @@
       @media (hover: hover) {
         color: var(--color-black);
       }
+    }
+  }
+  .sm\:block {
+    @media (width >= 40rem) {
+      display: block;
     }
   }
   .sm\:grid-cols-2 {

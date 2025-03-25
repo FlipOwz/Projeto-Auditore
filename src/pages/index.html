@@ -10,6 +10,12 @@
 
 <body class="bg-[#00000A] text-white min-h-screen w-full overflow-x-hidden">
 
+    <div class="fixed top-0 left-0 w-[101%] h-full overflow-hidden z-[1000] transition-opacity duration-2000 ease-out hidden sm:block" id="videoContainer">
+        <video id="introVideo" autoplay muted playsinline class="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2 z-[1001] bg-black">
+            <source src="../assets/videos/video-intro.mp4" type="video/mp4">
+        </video>
+    </div>
+
     <header id="menu" class="bg-[#0A2A47] py-3 border-b-4 border-[#C2AE57]">
         <nav class="container mx-auto flex flex-wrap items-center px-6 justify-between">
             <a href="../pages/campeoes.html" class="font-league text-white px-4 py-2 border-2 border-[#C2AE57] rounded-full text-lg hover:bg-[#a8934b] transition-colors hover:text-black font-bold hidden md:inline-block">Campeões</a>
@@ -132,11 +138,8 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-    </script>
+    <script src="../assets/js/intro.js"></script>
+    <script src="../assets/js/menu.js"></script>
     
 </body>
 
